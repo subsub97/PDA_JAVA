@@ -8,10 +8,11 @@ public class Person {
     }
 
     public void buy(Phone phone ) {
-        System.out.print(this.name + "님이 " +phone.brand + "을 구매했습니다.");
+        System.out.println(this.name + "님이 " +phone.brand + "을 구매했습니다.");
     }
 
     public void turnOn(Phone phone) {
         System.out.println(this.name + "님이 " + phone.brand + "을 켰습니다.");
+        phone.printIntro();
     }
 }
